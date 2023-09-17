@@ -51,6 +51,7 @@ extension Refresh.Header: View {
             }
         }
         .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .listRowSeparator(.hidden)
         .anchorPreference(key: Refresh.HeaderAnchorKey.self, value: .bounds) {
             [.init(bounds: $0, refreshing: self.refreshing)]
         }
