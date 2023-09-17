@@ -73,7 +73,6 @@ extension Refresh.Footer: View {
             }
         }
         .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-        .listRowSeparator(.hidden)
         .anchorPreference(key: Refresh.FooterAnchorKey.self, value: .bounds) {
             if self.noMore || self.refreshing {
                 return []
